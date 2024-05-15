@@ -115,17 +115,29 @@ main h1::first-line {
     gap: 2rem;
 }
 
-.plano-description {
+.oferta-plano {
     display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    justify-content: space-between;
+}
+
+.plano-description {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "h3"
+        "ul"
+        "ul"
+        "ul"
+        "button";
+    gap: 1rem;
     background: var(--card-bg-color);
     border-radius: 0.5rem;
-    padding: 3rem 2rem;
+    padding: 3rem 4rem;
 }
 
 .plano-description h3 {
     font-size: 1.5rem;
+    grid-area: h3;
 }
 
 .plano-description strong {
@@ -136,7 +148,9 @@ main h1::first-line {
 .plano-description ul {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     gap: 1rem;
+    grid-area: ul;
 }
 
 .plano-description li {
@@ -149,8 +163,12 @@ main h1::first-line {
     font-size: 2rem;
 }
 
-.catalogo {
-    padding: 1rem;
+.plano-description button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: button;
+    height: 4rem;
 }
 
 .gallery {
@@ -158,10 +176,57 @@ main h1::first-line {
     grid-template-columns: repeat(2, 1fr);
     overflow: auto;
     gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
+    margin: 0.5rem;
 }
 
 .card img {
     width: 100%;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+.card:hover img {
+    opacity: 0;
+    transition: 1s opacity;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s transform;
+}
+
+.hbo {
+    background-image: url(../../assets/images/DC-Hover.webp);
+    background-size: cover;
+}
+
+.max {
+    background-image: url(../../assets/images/MAX-Hover.webp);
+    background-size: cover;
+}
+
+.dc {
+    background-image: url(../../assets/images/DC-Hover.webp);
+    background-size: cover;
+}
+
+.wb {
+    background-image: url(../../assets/images/WB-Hover.webp);
+    background-size: cover;
+}
+
+.cn {
+    background-image: url(../../assets/images/CN-Hover.png);
+    background-size: cover;
+}
+
+.ucl {
+    background-image: url(../../assets/images/UCL-Hover.webp);
+    background-size: cover;
 }
 
 section h2 {
@@ -224,6 +289,10 @@ footer, .links a {
 
     .gallery {
         grid-template-columns: repeat(6, 100%);
+    }
+
+    .oferta-plano {
+        flex-direction: column;
     }
 
     .links ul {
