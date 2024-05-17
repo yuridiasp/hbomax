@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <figure>
-            <img src="assets/images/hbo-logo.svg" alt="Logo HBO Max">
-        </figure>
+        <a href="index.html">
+            <figure>
+                <img src="assets/images/hbo-logo.svg" alt="Logo HBO Max">
+            </figure>
+        </a>
         <div>
-            <a href="#" id="link-login">ENTRAR</a>
-            <a href="#">
-                <button id="subs-btn">ASSINE AGORA</button>
-            </a>
+            <a href="signIn.html" id="link-login">ENTRAR</a>
+            <a href="#subscriptions" id="link-subscription" class="btn-gradient">ASSINE AGORA</a>
         </div>
     </header>
     <main>
@@ -37,25 +37,25 @@
                     <img src="assets/images/max_originals.png" alt="Logo da Max orignals">
                 </figure>
             </div>
-            <h1>CURTA AS MELHORES HISTÓRIAS <strong>PARA TODO MUNDO</strong></h1>
+            <h1>CURTA AS MELHORES HISTÓRIAS<br><strong>PARA TODO MUNDO</strong></h1>
             <div class="horizontal-bar"></div>
             <div id="oferta-sub">
                 <p class="ft-qs">Assinaturas a partir de</p>
                 <p><strong>R$14,15</strong> /mês<sup>*</sup></p>
             </div>
             <div>
-                <a href="#">
-                    <button class="btng-gradiente">ASSINE AGORA</button>
+                <a href="#subscriptions">
+                    <button id="oferta-sub-btn" class="btn-gradient subscribe animation-oferta-sub">ASSINE AGORA</button>
                 </a>
             </div>
             <div>
                 <p class="ft-qs"><sup>*</sup>aplicável ao plano anual com o pagamento antecipado</p>
             </div>
         </section>
-        <section>
+        <section id="subscriptions" class=" bg-ms">
             <h2>Conheça nossos planos e economize na assinatura trimestral ou anual com o pagamento antecipado.</h2>
             <div id="planos">
-                <div class="plano-description">
+                <div class="plano-description" id="plano-mobile">
                     <div class="oferta-plano">
                         <h3>Mobile</h3>
                         <p><strong>R$ 19,90</strong> /mês</p>
@@ -66,9 +66,9 @@
                         <li>Tenha conteúdo em resolução adaptada para cada dispositivo</li>
                         <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
                     </ul>
-                    <button class="btng-gradiente">ESCOLHER O PLANO MOBILE</button>
+                    <button class="btn-gradient subscribe">ESCOLHER O PLANO MOBILE</button>
                 </div>
-                <div class="plano-description">
+                <div class="plano-description" id="plano-multitelas">
                     <div class="oferta-plano">
                         <h3>Multitelas</h3>
                         <p><strong>R$ 27,90</strong> /mês</p>
@@ -81,7 +81,7 @@
                         <li>Baixe suas séries e filmes favoritos, assista onde e quando quiser.</li>
                         <li>Crie até 5 perfis diferentes.</li>
                     </ul>
-                    <button class="btng-gradiente">ESCOLHER O PLANO MULTITELAS</button>
+                    <button class="btn-gradient subscribe">ESCOLHER O PLANO MULTITELAS</button>
                 </div>
             </div>
         </section>
@@ -113,19 +113,19 @@
         <nav class="links">
             <ul>
                 <li>
-                    <a href="#">AGORA NA HBO MAX</a>
+                    <a href="https://www.hbomax.com/br/pt/sitemap">AGORA NA HBO MAX</a>
                 </li>
                 <li>
-                    <a href="#">EM BREVE</a>
+                    <a href="https://www.hbomax.com/br/pt/coming-soon">EM BREVE</a>
                 </li>
                 <li>
-                    <a href="#">FILME EM DESTAQUE</a>
+                    <a href="https://www.hbomax.com/br/pt/feature">FILME EM DESTAQUE</a>
                 </li>
                 <li>
-                    <a href="#">SÉRIES</a>
+                    <a href="https://www.hbomax.com/br/pt/series">SÉRIES</a>
                 </li>
                 <li>
-                    <a href="#">AJUDA</a>
+                    <a href="https://help.hbomax.com/br">AJUDA</a>
                 </li>
             </ul>
         </nav>
@@ -133,22 +133,22 @@
         <div class="social">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/HBOMaxBr/">
                         <img src="assets/images/fb_0.png" alt="Logo do Facebook">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://twitter.com/HBOMaxBR">
                         <img src="assets/images/twitter_0.png" alt="Logo do Twitter / X">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.instagram.com/hbomaxbr/">
                         <img src="assets/images/instagram_0.png" alt="Logo do Instagram">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.youtube.com/c/hbomaxbr">
                         <img src="assets/images/youtube_0.png" alt="Logo do Youtube">
                     </a>
                 </li>
